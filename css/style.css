@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.top-container {
+  height: 100vh;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sub-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top-background {
+  background-image: url(https://ithemes.com/wp-content/uploads/2019/08/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01-1536x805.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+.profession {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "Manrope", sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  animation: typing 3s steps(30) forwards, blink-caret 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.profile-pic {
+  grid-row: span 2;
+  background-color: #5c469ca3;
+}
+
+.pic {
+  height: 250px;
+  border-radius: 50%;
+  margin: 35px;
+}
+
+.info {
+  grid-row: span 2;
+}
+.h3-info {
+  font-size: 2.5rem;
+}
+.p-info {
+  font-size: 1.15rem;
+}
+.span-info {
+  color: blueviolet;
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  background-color: #5c469ca3;
+  border: none;
+}
+
+.a-button{
+  text-decoration: none;
+  color: white;
+}
+
+.h3-container {
+  display: flex;
+  justify-content: center;
+}
+
+.centered-h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  text-align: center;
+}
+
+.hr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0;
+}
+.custom-hr {
+  border: dotted gray 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 50px 0;
+}
+
+.about-p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.15rem;
+  text-align: center;
+  margin: 0px 250px;
+  margin-bottom: 10px;
+}
+
+.flex-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.contact-info {
+  display: grid;
+  place-items: center;
+}
+
+.container-background {
+  background-color: #5c469ca3;
+}
+
+
+@media (max-width: 991px){
+
+  .top-background{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .name{
+    font-size: 3.5rem;
+  }
+  .profession{
+    font-size: 1.5rem;
+    animation: typing 3s steps(30) forwards, blink-caret 0.7s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+
+  .pic {
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px;
+  }
+
+  .profile-pic{
+    grid-column: span 2;
+  }
+  .info{
+    grid-column: span 2;
+    text-align: center;
+  }
+  .buttons{
+    grid-column: span 2;
+  }
+  .h3-info{
+    font-size: 2rem;
+  }
+  .p-info{
+    font-size: 1rem;
+  }
+  .centered-h3{
+    font-size: 2rem;
+  }
+  .about-p{
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+  .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
